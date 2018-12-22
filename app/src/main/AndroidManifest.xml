@@ -21,7 +21,8 @@
         <activity android:name=".SigninActivity" />
         <activity android:name=".SignupEmailActivity" />
         <activity android:name=".ManualActivity" />
-        <activity android:name=".ManualAddActivity"></activity>
+        <activity android:name=".ManualAddActivity" />
+        <activity android:name=".manual_add_invitesearchActivity"></activity>
     </application>
 
 </manifest>

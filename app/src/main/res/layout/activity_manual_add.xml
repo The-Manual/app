@@ -81,10 +81,10 @@
             />
 
         <Button
+            android:background="@drawable/btn_invitecancle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="초대"
-            android:background="@drawable/custom_btn"
             />
 
 

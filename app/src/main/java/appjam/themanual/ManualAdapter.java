@@ -1,23 +1,23 @@
 package appjam.themanual;
 
-import android.content.Context;
-import android.media.Image;
-import android.support.annotation.NonNull;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.TextView;
+        import android.content.Context;
+        import android.media.Image;
+        import android.support.annotation.NonNull;
+        import android.support.v7.widget.LinearLayoutManager;
+        import android.support.v7.widget.RecyclerView;
+        import android.view.LayoutInflater;
+        import android.view.View;
+        import android.view.ViewGroup;
+        import android.widget.ImageView;
+        import android.widget.TextView;
 
-import java.util.ArrayList;
+        import java.util.ArrayList;
 
 /**
  * Created by 김예원 on 2018-12-22.
  */
 
-public class ManualAdapter extends RecyclerView.Adapter<ManualAdapter.ManualHolder>{
+public class ManualAdapter extends RecyclerView.Adapter<ManualAdapter.ManualHolder> implements ItemActionListener{
 
     private ArrayList<ManualDataModel> dataList;
     private Context mContext;
@@ -42,7 +42,7 @@ public class ManualAdapter extends RecyclerView.Adapter<ManualAdapter.ManualHold
 
         ManualHolder.itemTitle.setText(itemTitle);
         ManualHolder.itemPerson.setText(itemPerson + "명");
-       // ManualHolder.itemBackground.setImageResource(itemBackground);
+        // ManualHolder.itemBackground.setImageResource(itemBackground);
 
 
     }
@@ -50,6 +50,18 @@ public class ManualAdapter extends RecyclerView.Adapter<ManualAdapter.ManualHold
     @Override
     public int getItemCount() {
         return (null != dataList ? dataList.size() : 0);
+    }
+
+    @Override
+    public void onItemMoved(int from, int to) {
+        if(from==to){
+            return ;
+        }
+    }
+
+    @Override
+    public void onItemSwiped(int position) {
+
     }
 
     public class ManualHolder extends RecyclerView.ViewHolder {

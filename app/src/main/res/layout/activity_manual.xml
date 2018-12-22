@@ -38,6 +38,7 @@
             android:background="@android:color/transparent"
             android:layout_weight="1"
             />
+
     </LinearLayout>
 
     <RelativeLayout
@@ -48,19 +49,21 @@
             android:id="@+id/manual_recycler_view"
             app:layoutManager="LinearLayoutManager"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content">
         </android.support.v7.widget.RecyclerView>
 
         <android.support.design.widget.FloatingActionButton
             android:id="@+id/floatingbtn_manual_add"
             android:layout_width="60dp"
             android:layout_height="60dp"
+            android:elevation="0dp"
+            app:elevation="0dp"
+            android:src="@drawable/ic_addplus"
             android:layout_alignParentBottom="true"
             android:layout_alignParentEnd="true"
             android:layout_gravity="bottom|right"
             android:layout_marginBottom="100dp"
             android:layout_marginEnd="20dp"
-            android:src="@drawable/ic_add"
             app:layout_anchorGravity="bottom|right|end"
             android:theme="@style/MyFloatingButton"/>
     </RelativeLayout>

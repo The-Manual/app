@@ -4,7 +4,6 @@
     android:paddingLeft="16dp"
     android:paddingTop="20dp">
     <item>
-
         <shape>
             <corners android:radius="2dp"/>
             <solid android:color="@android:color/white"/>
@@ -12,16 +11,5 @@
                 android:width="1dp"
                 android:color="#353a50"/>
         </shape>
-    </item>
-    <item android:left="8dp">
-        <bitmap
-            android:gravity="center_horizontal"
-            android:src="@drawable/ic_person_add"
-            android:tileMode="disabled"/>
-        <padding
-            android:left="10dp"
-            android:top="10dp"
-            android:right="10dp"
-            android:bottom="10dp" />
     </item>
 </layer-list>

@@ -26,3 +26,6 @@ class ManualAddActivity : AppCompatActivity() {
 
     }
 }
+/**
+ * Created by 김예원 on 2018-12-23.
+ */

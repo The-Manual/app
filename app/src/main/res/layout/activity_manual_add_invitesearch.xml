@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context="appjam.themanual.manual_add_invitesearchActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5pt"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#4c5264"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="3sp"
+            android:text="사용자 리스트"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="8"
+            />
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
