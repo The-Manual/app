@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/sign_bg"
+    tools:context="appjam.themanual.SignupActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:layout_weight="9">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="36sp"
+            android:textColor="#ffffff"
+            android:letterSpacing="-0.01"
+            android:lineSpacingExtra="-20sp"
+            android:layout_gravity="center"
+            android:text="축하합니다"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/textview_signupemail_"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="57dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#80ffffff"
+            android:lineSpacingExtra="6sp"
+            android:gravity="center_horizontal"
+            android:text="회원가입을 축하합니다!
+            abc123@gmail.com으로
+            이메일이 전송되었습니다.
+            이메일 인증 후에 ‘확인’버튼을
+            누르시거나, 재로그인을 해주세요."
+            />
+
+        <Button
+            android:id="@+id/btn_signupemail_reemail"
+            android:layout_marginTop="26dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="19dp"
+            android:paddingBottom="18dp"
+            android:textSize="12sp"
+            android:textColor="#ffffff"
+            android:lineSpacingExtra="4sp"
+            android:textStyle="bold"
+            android:layout_marginVertical="69dp"
+            android:text="이메일 재전송"
+            style="?android:attr/borderlessButtonStyle"
+            android:background="@drawable/btn_out"
+            />
+
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/btn_signupemail_check"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:textSize="12sp"
+        android:textColor="#5887f9"
+        android:lineSpacingExtra="4sp"
+        android:textStyle="bold"
+        android:text="확인"/>
+
+</LinearLayout>
