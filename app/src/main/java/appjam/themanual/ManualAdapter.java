@@ -29,10 +29,9 @@ public class ManualAdapter extends RecyclerView.Adapter<ManualAdapter.ManualHold
 
     @NonNull
     @Override
-    public ManualHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
+    public ManualAdapter.ManualHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
         View v = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.recycler_manualitem, null);
-        ManualHolder mh = new ManualHolder(v);
-        return mh;
+        return new ManualHolder(v);
     }
 
     @Override
@@ -43,7 +42,9 @@ public class ManualAdapter extends RecyclerView.Adapter<ManualAdapter.ManualHold
 
         ManualHolder.itemTitle.setText(itemTitle);
         ManualHolder.itemPerson.setText(itemPerson + "명");
-        ManualHolder.itemBackground.setImageResource(itemBackground);
+       // ManualHolder.itemBackground.setImageResource(itemBackground);
+
+
     }
 
     @Override

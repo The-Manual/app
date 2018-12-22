@@ -14,34 +14,24 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         >
-        <ImageButton
-            android:id="@+id/imagebutton_manual_backarrow"
-            android:layout_width="60sp"
-            android:layout_height="60sp"
-            android:padding="5pt"
-            android:scaleType="centerInside"
-            android:src="@drawable/ic_back_arrow"
-            android:layout_weight="1"
-            android:background="@android:color/transparent"
-            />
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:padding="5pt"
-            android:textSize="30sp"
+            android:textSize="20sp"
             android:textStyle="bold"
             android:textColor="#4c5264"
             android:gravity="center_vertical"
             android:lineSpacingExtra="3sp"
             android:text="메뉴얼"
+            android:layout_marginLeft="20dp"
             android:layout_weight="8"
             />
 
         <ImageButton
-            android:id="@+id/iamgebutton_manual_important"
-            android:layout_width="60sp"
-            android:layout_height="60sp"
+            android:id="@+id/imagebutton_manual_important"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
             android:padding="5pt"
             android:scaleType="centerInside"
             android:src="@drawable/ic_important"
@@ -50,11 +40,28 @@
             />
     </LinearLayout>
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/manual_recycler_view"
-        android:layout_weight="8"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-    </android.support.v7.widget.RecyclerView>
-    </LinearLayout>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/manual_recycler_view"
+            app:layoutManager="LinearLayoutManager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v7.widget.RecyclerView>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatingbtn_manual_add"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="100dp"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/ic_add"
+            app:layout_anchorGravity="bottom|right|end"
+            android:theme="@style/MyFloatingButton"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/imageview_invitedperson_profile"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="fill"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:src="@drawable/whtie" />
+
+    <LinearLayout
+        app:layout_constraintLeft_toRightOf="@+id/imageview_invitedperson_profile"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|bottom"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        >
+
+        <TextView
+            android:id="@+id/textview_invitedperson_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#4c5264"
+            android:lineSpacingExtra="4sp"
+            android:text="홍길준"
+            />
+
+        <TextView
+            android:id="@+id/textview_invitedperson_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="#bcc5d3"
+            android:lineSpacingExtra="4sp"
+            android:text="kim123@gmail.com"
+            />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_manualadd_cancle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:textColor="#5574f7"
+        android:lineSpacingExtra="4sp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@drawable/btn_invitecancle"
+        android:text="취소"/>
+
+</android.support.constraint.ConstraintLayout>

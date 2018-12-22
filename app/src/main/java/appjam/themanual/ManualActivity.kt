@@ -1,5 +1,7 @@
 package appjam.themanual
 
+import android.content.Context
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
@@ -22,6 +24,13 @@ class ManualActivity : AppCompatActivity() {
         val adapter = ManualAdapter(this, datas)
         manual_recycler_view.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
         manual_recycler_view.adapter = adapter
+
+        floatingbtn_manual_add.setOnClickListener {
+            val intent = Intent(applicationContext, ManualAddActivity::class.java)
+            startActivity(intent)
+            overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.fade_in)
+        }
+
 
 
     }

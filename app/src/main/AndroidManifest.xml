@@ -20,7 +20,8 @@
         <activity android:name=".SignupActivity" />
         <activity android:name=".SigninActivity" />
         <activity android:name=".SignupEmailActivity" />
-        <activity android:name=".ManualActivity"></activity>
+        <activity android:name=".ManualActivity" />
+        <activity android:name=".ManualAddActivity"></activity>
     </application>
 
 </manifest>

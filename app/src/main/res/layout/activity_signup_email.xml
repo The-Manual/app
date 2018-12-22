@@ -68,8 +68,6 @@
 
     </LinearLayout>
 
-
-
     <Button
         android:id="@+id/btn_signupemail_check"
         android:layout_width="match_parent"
